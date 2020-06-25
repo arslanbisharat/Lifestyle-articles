@@ -8,9 +8,11 @@ gem 'simple_form'
 gem 'mini_magick'
 gem 'wysiwyg-rails'
 gem 'font_awesome5_rails'
-gem "jquery-slick-rails"
 gem 'jquery-rails'
 gem 'faker'
+gem 'trix'
+gem 'carrierwave-aws'
+gem 'fog-aws'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'

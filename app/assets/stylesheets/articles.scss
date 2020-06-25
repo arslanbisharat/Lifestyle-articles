@@ -4,7 +4,7 @@
 
 .button {
   border-radius: 20px;
-  background: #eb3007;
+  background: #fd6000;
   font-size: 1.3rem;
   font-weight: bold;
   padding: 0.7rem 1rem;
@@ -29,14 +29,29 @@
     .group {
       margin: 3rem 0;
 
-      .form-control {
+      .cat-select,
+      .tag-select {
+        height: 42px;
+        border: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        outline: none;
         font-size: 1.5rem;
+        color: #999;
+      }
+
+      .input-group-text i {
+        font-size: 1.7rem;
+        color: #444;
+      }
+
+      .tag-info{
+        font-size: 1.2rem;
       }
 
       .input {
         border: none;
         font-size: 3rem;
-        font-size: 2rem;
         padding: 12px 20px;
         border-radius: 25px;
         background: rgba(255, 255, 255, 0.2);
@@ -49,6 +64,14 @@
           color: #7575759d;
         }
       }
+
+      .article-text-area {
+        font-size: 1.7rem;
+
+      &::placeholder {
+        font-size: 1.7rem;
+      }
+    }
 
 
     }
@@ -66,7 +89,7 @@
 
   .fr-toolbar,
   .input-group-text {
-    background: #eb3107ea;
+    background: #f9792b;
   }
 
   .second-toolbar {
@@ -180,7 +203,8 @@
   }
 
   .card-text span {
-    font-size: 1.4rem!important;
+    font-size: 1.7rem!important;
+    font-family: Georgia, 'Times New Roman', Times, serif!important;
   }
 
   .author-social-link {
@@ -252,6 +276,11 @@
     }
   }
 
+  .article-tags {
+    font-size: 1.4rem;
+  }
+}
+
   .suggested-articles {
     .card-title {
       font-size: 1.5rem;
@@ -298,16 +327,15 @@
   }
 
   .view,
-  .comment {
+  .comment,
+  .min-read {
     display: flex;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0 0.7rem;
 
     i {
       color: #eb3007;
       font-size: 1.5rem;
     }
   }
-}
-
 // $font-subheader: 'Vollkorn', serif;

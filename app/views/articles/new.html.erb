@@ -1,4 +1,4 @@
-<div class="new-article">
+<div class="main-content new-article">
   <div class="article-form">
 
     <%= form_for(@article, html: { multipart: true }) do |f| %>
@@ -15,15 +15,17 @@
         </div>
       <% end %>
       <div class="row">
-        <div class="col-8">
+        <div class="col-12 col-lg-8">
           <div class="group">
             <%= f.text_field :title, autocomplete: 'off', maxlength: "60", class: "input", placeholder: "Title" %>
           </div>
           <div class="group">
-            <%= f.text_area :text, class: "input", id: "article-text-area" %>
+            <%= f.text_area :text,class: "input article-text-area", id: "article-text-area", placeholder: "Type here your thoughts" %>
+            <!-- <trix-editor input="article-text-area"></trix-editor> -->
           </div>
+
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-4 mt-5">
           <div class="article-featured-image" id="article-featured">
             <% unless @article.featured_image.blank? %>
               <%= image_tag(@article.featured_image_url, id: "previewImage") %>
@@ -38,10 +40,21 @@
            <div class="group">
             <div class="input-group mb-2">
               <div class="input-group-prepend">
-                <div class="input-group-text">@</div>
+                <div class="input-group-text"><%= fa_icon('list-alt') %></div>
               </div>
-              <%= collection_select(:article, :category_id, Category.all, :id, :name, {prompt: "Select Category"}, {class: "form-control"}) %>
+              <%= collection_select(:article, :category_id, Category.all, :id, :name, {prompt: "Select Category"}, {class: "form-control cat-select"}) %>
             </div>
+          </div>
+
+          <div class="group">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><%= fa_icon('tag') %></div>
+              </div>
+              <%= f.text_field :tag_list, placeholder: "Article Tags", class: "form-control tag-select" %>
+
+            </div>
+            <small class="tag-info">Seperate tags with a comma</small>
           </div>
 
         </div>
@@ -58,17 +71,10 @@
 <script type="text/javascript" src = "../../assets/froala_editor.pkgd.min.js"></script>
 
 <script>
-
-
- new FroalaEditor('#article-text-area', {
-   placeholderText: 'Tell your story...'
+  new FroalaEditor('#article-text-area', {
+    placeholderText: 'Type here your thoughts...',
+    heightMin: 100,
+    heightMax: 300,
+    height: 300
   })
-
-  //  new FroalaEditor('img#edit', {
-  //     toolbarButtons: ['insertImage'],
-  //     imageEditButtons: ['imageReplace', 'imageRemove']
-  //  });
-
-
-
 </script>

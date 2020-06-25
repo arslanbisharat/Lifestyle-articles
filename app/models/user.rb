@@ -12,12 +12,13 @@ class User < ApplicationRecord
   validates :name,  presence: true, length: { maximum: 50 }
   validates :username, presence: true, length: { maximum: 50 },
                        uniqueness: { case_sensitive: false }
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
   validates :email, presence: true, length: { maximum: 255 },
-                    format: { with: VALID_EMAIL_REGEX },
-                    uniqueness: { case_sensitive: false }
+                    uniqueness: { case_sensitive: false },
+                    format: { with: VALID_EMAIL_REGEX }
   validates :password, presence: true, length: { minimum: 6 }
 
+  mount_uploader :avatar, AvatarUploader
   before_save :downcase_email
   has_secure_password
 
@@ -42,6 +43,7 @@ class User < ApplicationRecord
 
   # Returns true if the given token matches the digest.
   def authenticated?(remember_token)
+    return false if remember_digest.nil?
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
 
@@ -78,5 +80,16 @@ class User < ApplicationRecord
     def downcase_email
       self.email = email.downcase
       self.username = username.downcase
+    end
+
+    def save_avatar
+      avatar = gravatar_for(self.email)
+      self.update_column(:avatar, avatar)
+    end
+
+    def gravatar_for(email, size: 80)
+      gravatar_id = Digest::MD5::hexdigest(email.downcase)
+      gravatar_url = "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
+      gravatar_url
     end
 end

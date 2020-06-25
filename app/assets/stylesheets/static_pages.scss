@@ -105,31 +105,27 @@
 
   .main-section {
     transform: translateY(61px);
-    padding: 0 3rem;
 
     .todays-spotlight-header {
-      border-top: 50px solid #fd6000;
-      border-right: 35px solid transparent;
-      height: 100%;
-      width: 50%;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        width: 100%;
-        height: 5px;
-        background: #fd6000;
-      }
 
       h2 {
-        position: absolute;
-        bottom: 0;
-        font-size: 3rem;
+        background: #fd6000;
+        display: inline;
+        font-size: 2.7rem;
         font-family: 'Vollkorn', serif;
         padding: 0.7rem;
         color: #4e443e;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          width: 100%;
+          height: 5px;
+          background: #fd6000;
+        }
 
       }
     }
@@ -185,18 +181,27 @@
   .about-section,
   .footer {
     background: #4e443e;
-    transform: translateY(61px);
+    transform: translateY(15rem);
     color: #fff;
 
     .about-us,
     .categories-links,
     .subscribe {
       margin-bottom: 3rem;
+      padding: 0 3rem;
     }
 
-      p {
-        color: #fff;
-      }
+    .categories-links a:hover {
+      color: #db5603;
+    }
+
+    .subscribe button:hover {
+      background-color: #db5603;
+    }
+
+    p {
+      color: #fff;
+    }
 
     .header {
       font-family: 'Vollkorn', serif;
@@ -244,7 +249,7 @@
     font-size: 1.4rem;
     background: #ffffff1c;
     color: #fff;
-    margin: 1rem;
+    margin: 1rem 0;
 
     &::placeholder {
       color: #fff;
@@ -284,6 +289,16 @@
       color: #fd6000;
       margin: 0 0.6rem;
     }
+  }
+
+  .search-button {
+    background: #fd6000!important;
+    border: 0!important;
+  }
+
+  .search-form {
+    display: flex;
+    margin-right: 10px;
   }
 
 
@@ -338,6 +353,7 @@
 
 @media only screen and (max-width: 530px) {
   .main-content {
+
 
     .categories-article {
       .categories-first-article {
