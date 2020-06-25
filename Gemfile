@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?        
 gem 'aws-sdk-s3'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'carrierwave'
@@ -13,6 +12,7 @@ gem 'jquery-rails'
 gem 'mini_magick'
 gem 'simple_form'
 gem 'trix'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'websocket-extensions', '>= 0.1.5'
 gem 'will_paginate', '3.1.6'
 gem 'wysiwyg-rails'
