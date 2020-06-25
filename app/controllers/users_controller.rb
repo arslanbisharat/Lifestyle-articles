@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: [:new, :create]
-  before_action :already_logged_in, only: [:new, :create]
+  before_action :logged_in_user, except: %i[new create]
+  before_action :already_logged_in, only: %i[new create]
 
   def index
     @users = User.all
@@ -15,27 +15,27 @@ class UsersController < ApplicationController
     if @user.save
       create_session(@user)
       create_cookies(@user)
-      flash['alert-success'] = 'Welcome! You are now a member'
+      flash['alert-success'] = 'Welcome to the great Lifestyle platform'
       redirect_to root_path
     else
       render :new
     end
-
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = current_user
     @articles = @user.articles
   end
 
   def edit
-    @user = User.find(params[:id])
+    @user = current_user
   end
 
   def update
-    @user = User.find(params[:id])
+    @user = current_user
     if @user.update(user_params)
-      redirect_to user_path(@user)
+      flash['alert-success'] = 'User updated succesfully'
+      redirect_to profile_path
     else
       render :edit
     end
@@ -43,10 +43,9 @@ class UsersController < ApplicationController
 
   private
 
-    def user_params
-      params.required(:user).permit(:name, :username, :email,
-                                    :facebook, :twitter,
-                                    :linkedin, :avatar,
-                                    :password, :password_confirmation)
-    end
+  def user_params
+    params.required(:user).permit(:name, :username, :email,
+                                  :twitter, :linkedin, :avatar,
+                                  :password, :password_confirmation)
+  end
 end
