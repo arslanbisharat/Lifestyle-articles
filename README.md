@@ -1,3 +1,18 @@
+<!--
+*** Thanks for checking out this README Template. If you have a suggestion that would
+*** make this better, please fork the repo and create a pull request or simply open
+*** an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -7,21 +22,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/arslanbisharat/lifestyle-articles">
+  <a href="https://github.com/rammazzoti2000/ror-capstone-lifestyle">
     <img src="app/assets/images/microverse.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">RoR / Capstone --> [LifeOpedia!]</h3>
+  <h3 align="center">RoR / Capstone --> [LifeStyle!]</h3>
 
   <p align="center">
     This project is the Capstone of the Microverse curriculum at the end of the Ruby on Rails module!
     <br />
-    <a href="https://github.com/arslanbisharat/lifestyle-articles"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/rammazzoti2000/ror-capstone-lifestyle"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/arslanbisharat/lifestyle-articles/issues">Report Bug</a>
+    <a href="https://github.com/rammazzoti2000/ror-capstone-lifestyle/issues">Report Bug</a>
     ·
-    <a href="https://github.com/arslanbisharat/lifestyle-articles">Request Feature</a>
+    <a href="https://github.com/rammazzoti2000/ror-capstone-lifestyle/issues">Request Feature</a>
   </p>
 </p>
 
@@ -60,9 +75,9 @@ This project was built using these technologies.
 
 <!-- Live Demo -->
 ## Walkthrough Video and Deployment (Heroku)
-NA
+https://www.loom.com/share/291f99a17d0542e09a48fd3f7c0e83cc
 ##
-* Live Demo Link --> App Deployed with Heroku: [ror-capstone-lifeopedia]() :point_left:
+* Live Demo Link --> App Deployed with Heroku: [ror-capstone-lifeopedia](https://ror-capstone-lifeopedia.herokuapp.com/) :point_left:
 
 ### Getting Started
 
@@ -74,14 +89,14 @@ Ruby: 2.7.0
 Rails: 5.2.4
 
 ### Clone
-* [download](https://github.com/arslanbisharat/lifestyle-articles/archive/development.zip) or clone this repo:
+* [download](https://github.com/rammazzoti2000/ror-capstone-lifestyle/archive/development.zip) or clone this repo:
   - Clone with SSH:
   ```
-    git@github.com:arslanbisharat/lifestyle-articles.git
+    git@github.com:rammazzoti2000/ror-capstone-lifestyle.git
   ```
   - Clone with HTTPS
   ```
-    https://github.com/arslanbisharat/lifestyle-articles.git
+    https://github.com/rammazzoti2000/ror-capstone-lifestyle.git
 
 ### Setup
 
@@ -156,28 +171,44 @@ User profile can be edited along with the profile's picture
 <!-- CONTACT -->
 ## Contributors
 
+👤 **Alexandru Bangau**
+
+- LinkedIn: [Alexandru Bangau](https://www.linkedin.com/in/alexandru-bangau/)
+- GitHub: [@rammazzoti2000](https://github.com/rammazzoti2000)
+- E-mail: bangau.alexandru@gmail.com
+- Project [Link](https://github.com/rammazzoti2000/ror-capstone-lifestyle/)
 
 ## :handshake: Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/arslanbisharat/lifestyle-articles/issues).
+Feel free to check the [issues page](https://github.com/rammazzoti2000/ror-capstone-lifestyle/issues).
 
 ## Show your support
 
 Give a :star: if you like this project!
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Microverse](https://www.microverse.org/)
+* [Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
+* [Ruby on Rails](https://rubyonrails.org/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Behance](https://www.behance.net/)
+* [Heroku](https://www.heroku.com/)
 
 ## Credits
 * Nelson Sakwa - [liFEstIye](https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/arslanbisharat/lifestyle-articles.svg?style=flat-square
-[contributors-url]: https://github.com/arslanbisharat/lifestyle-articles/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/arslanbisharat/lifestyle-articles.svg?style=flat-square
-[forks-url]: https://github.com/arslanbisharat/lifestyle-articles/network/members
-[stars-shield]: https://img.shields.io/github/stars/arslanbisharat/lifestyle-articles.svg?style=flat-square
-[stars-url]: https://github.com/arslanbisharat/lifestyle-articles/stargazers
-[issues-shield]: https://img.shields.io/github/issues/arslanbisharat/lifestyle-articles.svg?style=flat-square
-[issues-url]: https://github.com/arslanbisharat/lifestyle-articles/issues
+[contributors-shield]: https://img.shields.io/github/contributors/rammazzoti2000/ror-capstone-lifestyle.svg?style=flat-square
+[contributors-url]: https://github.com/rammazzoti2000/ror-capstone-lifestyle/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/rammazzoti2000/ror-capstone-lifestyle.svg?style=flat-square
+[forks-url]: https://github.com/rammazzoti2000/ror-capstone-lifestyle/network/members
+[stars-shield]: https://img.shields.io/github/stars/rammazzoti2000/ror-capstone-lifestyle.svg?style=flat-square
+[stars-url]: https://github.com/rammazzoti2000/ror-capstone-lifestyle/stargazers
+[issues-shield]: https://img.shields.io/github/issues/rammazzoti2000/ror-capstone-lifestyle.svg?style=flat-square
+[issues-url]: https://github.com/rammazzoti2000/ror-capstone-lifestyle/issues
 

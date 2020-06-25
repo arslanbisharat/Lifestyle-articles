@@ -4,16 +4,17 @@
 
 .button {
   border-radius: 20px;
-  background: #5604da;
+  background: #fd6000;
   font-size: 1.3rem;
+  font-weight: bold;
   padding: 0.7rem 1rem;
-  color: rgb(221, 219, 223);
+  color: #fff;
   border: none;
   outline: none;
 
   &:hover {
-    background: #e20a76;
-    color: rgb(24, 231, 59);
+    background: #6e1804;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -24,7 +25,7 @@ i {
 
 .input {
   width: 100%;
-  background-color: rgb(47, 192, 18);
+  background-color: wheat;
   border: none;
   border-radius: 8px;
   outline: none;
@@ -39,7 +40,7 @@ i {
   margin: 0 0.7rem;
 
   i {
-    color: #0a0c79;
+    color: #eb3007;
     font-size: 1.5rem;
   }
 
@@ -54,7 +55,7 @@ i {
   margin: 0 0.7rem;
 
   i {
-    color: #084f7e;
+    color: #eb3007;
     font-size: 1.5rem;
   }
 
@@ -176,7 +177,7 @@ i {
   .article-body-label {
     width: 100%;
     padding: 1.5rem 2rem;
-    background: #803304;
+    background: #f9792b;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     font-size: 2rem;

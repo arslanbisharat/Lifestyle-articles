@@ -1,6 +1,6 @@
 <div class="col-12 col-md-3 mb-5 mb-md-0">
   <div class="suggested-articles mt-3 text-center">
-    <h2 class="section-header pt-0">Suggestions</h2>
+    <h2 class="section-header pt-0">Suggested Articles</h2>
     <div class="suggested-article-content">
       <% article_random(@articles, 3).each do |suggested_articles| %>
         <%= link_to article_path(suggested_articles.id), class: "suggested-article-link" do %>
