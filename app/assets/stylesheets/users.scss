@@ -210,69 +210,6 @@
   }
 }
 
-.social-media-login {
-  height: 70%;
-
-  .social-media-header {
-    font-size: 1.7rem;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 5rem;
-  }
-
-  .social-login {
-    border: 1px solid #777;
-    border-color: rgba(0, 0, 0, 0.2);
-    border-radius: 0.3em;
-    color: #fff;
-    box-shadow: inset 0 0.08em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.1em rgba(255, 255, 255, 0.9);
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-    position: relative;
-    padding: 0.8rem;
-    margin: 2rem 0;
-
-    a {
-      color: #fff;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
-  .facebook-login {
-    background: #4863ae;
-  }
-
-  .linkedin-login {
-    background: #0083a8;
-  }
-
-  .twitter-login {
-    background: #46c0fb;
-  }
-}
-
-.facebook,
-.facebook:hover {
-  color: #4863ae;
-}
-
-.linkedin,
-.linkedin:hover {
-  color: #0083a8;
-}
-
-.twitter,
-.twitter:hover {
-  color: #46c0fb;
-}
 
 // Profile Page
 
