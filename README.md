@@ -60,8 +60,6 @@ It is a webapp where users can register using name, username, password and can s
 As a logged in user, it is possible to create articles, edit profile, comment, vote and bookmark an article for future reads.
 The app can be used also on read only mode, with restricted access to its features.
 
-![screenshot-1](app/assets/images/screenshot-1.png)
-
 ### Built With
 This project was built using these technologies.
 * Ruby & Ruby on Rails
@@ -77,7 +75,7 @@ This project was built using these technologies.
 ## Walkthrough Deployment (Heroku)
 
 ##
-* Live Demo Link --> App Deployed with Heroku: [ror-capstone-lifeopedia](https://lifestyle-style.herokuapp.com/) :point_left:
+* Live Demo Link --> App Deployed with Heroku: [LifeStyle-Articles](https://lifestyle-articles.herokuapp.com/) :point_left:
 
 ### Getting Started
 
