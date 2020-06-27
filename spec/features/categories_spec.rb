@@ -19,7 +19,7 @@ RSpec.feature 'Authentications', type: :feature do
                            way: the social equality status',
                     featured_image: File.open(File.join(Rails.root, 'app/assets/images/lifeopedia_pics/travel-1.jpg')),
                     author_id: user.id,
-                    category_id: category.id,
+                    category_id: category.id,QASQ
                     status: 'published',
                     tag_list: 'travel, lifestyle',
                     views: 0)
