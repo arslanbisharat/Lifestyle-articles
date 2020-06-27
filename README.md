@@ -75,7 +75,7 @@ This project was built using these technologies.
 ## Walkthrough Deployment (Heroku)
 
 ##
-* Live Demo Link --> App Deployed with Heroku: [LifeStyle-Articles](https://lifestyle-articles.herokuapp.com/) :point_left:
+* Live Demo Link --> App Deployed with Heroku: [LifeStyle-Articles](https://ror-capstone-lifeopedia.herokuapp.com/) :point_left:
 
 ### Getting Started
 
