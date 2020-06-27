@@ -1,5 +1,5 @@
 {
-  "name": "ror_capstone_lifestyle",
+  "name": "lifestyle_articles",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
