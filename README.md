@@ -35,10 +35,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is the Capstone project that signs the completion of the RubyOnRails module in Microverse Curriculum.
-It is a webapp where users can register using name, username, password and can sign in with their username only.
-As a logged in user, it is possible to create articles, edit profile, comment, vote and bookmark an article for future reads.
-The app can be used also on read only mode, with restricted access to its features.
+This is the Capstone project that signs the completion of the RubyOnRails module in the Microverse Curriculum.
+It is a web app where users can register using their name, username, password and can sign in with their username only.
+As a logged-in user, it is possible to create articles, edit profiles, comment, vote and bookmark an article for future reads.
+The app can be used also on read-only mode, with restricted access to its features.
 
 ### Built With
 This project was built using these technologies.
@@ -104,7 +104,7 @@ Open `http://localhost:3000/` in your browser and sing in with a user already de
 
 #### Create User
 
-Fill the sign up form to create a user
+Fill the signup form to create a user
 
 ![screenshot](app/assets/images/sign_up.png)
 
@@ -116,13 +116,13 @@ Use only the username to login
 
 #### Create a new article from the dropdown menu
 
-Type your title and text, add an image, category and a tag
+Type your title and text, add an image, category, and a tag
 
 ![screenshot](app/assets/images/post.png)
 
 #### Bookmarked articles
 
-Articles can be bookmarked and will be saved in `Your Bookmars`
+Articles can be bookmarked and will be saved in `Your Bookmarks
 
 ![screenshot](app/assets/images/follow.png)
 
@@ -143,7 +143,7 @@ User profile can be edited along with the profile's picture
  ![erd](app/assets/images/erd.png)
  
  ## Potential future features
-- Extend the signin / signup process to social accounts, use verfied email process
+- Extend the signin / signup process to social accounts, use verified email process
 - Improve the front-end
 
 <!-- CONTACT -->
@@ -152,7 +152,7 @@ User profile can be edited along with the profile's picture
 
 ## :handshake: Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/arslanbisharat/lifestyle-articles/issues).
 
